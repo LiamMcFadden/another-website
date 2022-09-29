@@ -8,16 +8,23 @@
     <link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
 	<link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+	<script src="https://kit.fontawesome.com/1867ff0a53.js" crossorigin="anonymous"></script>
     <body>
+        <a href="#top" id="top-but">Top</a>
         <header>
-            <h4>Liam McFadden</h4>
+            <h3>Liam McFadden</h3>
             <nav>
+                <a href="#experience">Experience</a> \ 
+                <a href="#skills">Skills</a> \ 
+                <a href="#projects">Projects</a> \ 
                 <a href="" target="_blank">Resume</a> \ 
+                <a href="https://github.com/LiamMcFadden" target="_blank"><i class="fab fa-github"></i></a> \ 
+                <a href="https://www.linkedin.com/in/80-liam-mcfadden/" target="_blank"><i class="fab fa-linkedin"></i></a>
             </nav>
         </header>
 
         <h1>Education</h1>
-        <h4>Virginia Polytechnic Institute and State University</h4> 
+        <h3>Virginia Polytechnic Institute and State University</h3> 
         <i>Expected Graduation: December 2022</i>
         <br>
         <i>Major: Computer Science</i>
@@ -30,21 +37,20 @@
         <hr>
         <br>
 
-        <h1>Experience</h1>
-        <br>
-        <h4>NSA Cyber Exercise | <i>March 2022</i></h4>
+        <h1 id="experience">Experience</h1>
+        <h3>NSA Cyber Exercise | <i>March 2022</i></h3>
         <br>
         <p>
             The <a href="https://www.nsa.gov/Cybersecurity/NSA-Cyber-Exercise/" target="_blank">NSA Cyber Exercise (NCX)</a> is a three day long CTF style competition between all the Senior Military Colleges (SMC) and Military Academies. I competed in the Software Engineering module and helped my team to build and break a control pannel meant to regulate pipelines. Overall, my team took 5th place, beating all the other SMCs. 
         </p>
         <br>
-        <h4>Army Cyber Institute | <i>July 2021 - August 2021</i></h4>
+        <h3>Army Cyber Institute | <i>July 2021 - August 2021</i></h3>
         <br>
         <p>
             The <a href="https://cyber.army.mil/" target="_blank">Army Cyber Institute (ACI)</a> is the US Army's facility for research, advice, and education in the cyber domain. During my time there, I worked with a fellow intern to port a large MATLAB project to Python3. To facilitate the porting process, I wrote a <a href="https://github.com/LiamMcFadden/Matlab-Functions-in-Python/blob/master/matlab_funcs.py" target="_blank">small python library</a> for converting MATLAB syntax to python. I also designed and implemented a tool for the creation of configuration files for the MATLAB program using Tkinter. At the end of the internship I was rated in the top 2 out of the 30 interns in my cohort.
         </p>
         <br>
-        <h4>Vector Rideshare | <i>April 2020 - June 2021</i></h4>
+        <h3>Vector Rideshare | <i>April 2020 - June 2021</i></h3>
         <br>
         <p>
             Vector Rideshare was a student led startup that aimed to provide a more community oriented approach to ridesharing with a focus on universities. I worked on the product development team and let a three person subteam. I held weekly team meetings where I helped to teach basic skills such as Git and the command line and got status updates on various projects that teammates were working on. I worked primarily in TypeScript and React on developing the backend of a game to be integrated into the main app as well as a dashboard for tracking rider covid status. My experience at Vector Rideshare gave me a valuable insight as to what it takes to work with a small team in a startup environment in its earliest stages. 
@@ -53,7 +59,7 @@
         <br>
         <hr>
         <br>
-        <h1>Skills</h1>
+        <h1 id="skills">Skills</h1>
         <table>
             <thead>
                 <tr>
@@ -151,7 +157,8 @@
                     <td>HTML
                         <span>
                             <ul>
-                                <li><a href="https://github.com/LiamMcFadden/LiamMcFadden.github.io" target="_blank">This website</a></li>
+                                <li><a href="https://github.com/LiamMcFadden/LiamMcFadden.github.io" target="_blank">Also this one</a></li>
+                                <li><a href="https://github.com/LiamMcFadden/another-website" target="_blank">This website</a></li>
                             </ul>
                         </span>
                     </td>
@@ -167,7 +174,8 @@
                     <td>CSS
                         <span>
                             <ul>
-                                <li><a href="https://github.com/LiamMcFadden/LiamMcFadden.github.io" target="_blank">This website</a></li>
+                                <li><a href="https://github.com/LiamMcFadden/LiamMcFadden.github.io" target="_blank">Also this one</a></li>
+                                <li><a href="https://github.com/LiamMcFadden/another-website" target="_blank">This website</a></li>
                             </ul>
                         </span>
                     </td>
@@ -201,8 +209,34 @@
         <br>
         <hr>
         <br>
-        <h1>Projects</h1>
-
-
+        <h1 id="projects">Projects</h1>
+        <h3 class="project-title">Virginia Bar Association Wellness <a href="https://github.com/LiamMcFadden/VBAWellnessApp" target="_blank"><i class="fab fa-github"></i></a></li></h3>
+        <i>React Native, JavaScript, Firebase</i>
+        <br>
+        <br>
+        <p>Worked with three other students to develop a fitness competition app for the Virginia Bar Association. Weekly client meetings were held where we discussed our progress and their expectations. Throughout the course of development, Agile methodologies were used to keep us on track to meet our client's deadlines. The app was built using React Native and Firebase. My largest contribution was the leaderboard page seen below. Each user item linked to their profile page and the leaderboard could be sorted by either total points or badges aquired.</p>
+        <img src="img/vba-wellness.png" alt="VBA Wellness App" class="project-image">
+        <br>
+        <br>
+        <br>
+        <h3 class="project-title">Self Driving Car in Rocket League <a href="https://github.com/LiamMcFadden/RL-SelfDrivingCar" target="_blank"><i class="fab fa-github"></i></a></li></h3>
+        <i>Python, OpenCV, Win32API</i>
+        <br>
+        <br>
+        <p>With the Win32API, OpenCV, and Numpy, I can successfully identify and track the ball on the screen. This project is ongoing and has seen several approaches to ball identification and tracking including: centroid tracking, template matching, "You only look once" object detection, and most recently cascading classification. I have had the most success implementing template matching, however I hope that training a cascading classifier will yield better results.</p>
+        <img style="width: 100%;" src="img/rl-selfdrivingcar.png" alt="RL Self Driving Car" class="project-image">
+        <br>
+        <br>
+        <br>
+        <h3 class="project-title">Custom Web Server</h3>
+        <i>C, http, AWS, Docker</i>
+        <br>
+        <br>
+        <p>A personal web server that can serve files, stream MP4 video, and provide a simple token-based authentication API. Persistent connections as per the HTTP/1.1 protocol were also implemented. Hosed a small react-app within a Docker container on an AWS node using the server.</p>
+        <br>
+        <br>
+        <br>
+        <h1 id="contact">Contact</h1>
+        <h4>liamm18[at]vt.edu</h4>
     </body>
 </html>

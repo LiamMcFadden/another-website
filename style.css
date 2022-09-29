@@ -1,3 +1,49 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'system-ui', sans-serif;
+}
+
+body:before {
+    content: '';
+    position: fixed;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("img/veryhackerwow.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: cover;
+    filter: blur(8px);
+    z-index: -9;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+#top-but {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 99;
+
+    background: black;
+    padding: 10px;
+    text-decoration: none;
+    box-shadow: 2px 4px 0 4px yellowgreen, 4px 8px 0 8px pink, 8px 10px 0 12px navy;
+    color: white;
+    transition: background-color 0.5s ease;
+}
+
+#top-but:hover {
+    background: white;
+    color: black;
+}
+
 td > span {
     visibility: hidden;
     width: fit-content;
@@ -9,7 +55,7 @@ td > span {
 
     /* Position the tooltip */
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     margin-left: 20px;
 }
 
@@ -19,4 +65,10 @@ td:hover span {
 
 td {
     text-decoration: underline;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
