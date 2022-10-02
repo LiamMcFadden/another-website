@@ -25,24 +25,6 @@ p {
     font-size: 1.2em;
 }
 
-#top-but {
-    position: fixed;
-    bottom: 40px;
-    right: 40px;
-    z-index: 99;
-
-    background: black;
-    padding: 10px;
-    text-decoration: none;
-    box-shadow: 2px 4px 0 4px yellowgreen, 4px 8px 0 8px pink, 8px 10px 0 12px navy;
-    color: white;
-    transition: background-color 0.5s ease;
-}
-
-#top-but:hover {
-    background: white;
-    color: black;
-}
 
 td > span {
     visibility: hidden;
