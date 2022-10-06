@@ -38,17 +38,21 @@ td:hover span {
     visibility: visible;
 }
 
+td {
+    text-decoration: underline;
+} 
+
 @media(hover: none) {
+    td {
+        text-decoration: none;
+    }
+
     td > span {
         position: relative;
         visibility: visible;
         background-color: initial;
     }
 }
-
-td {
-    text-decoration: underline;
-} 
 
 img {
     display: block;
