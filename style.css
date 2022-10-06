@@ -35,9 +35,10 @@ td > span {
     margin: 0 auto;
 }  
 
-
-td:hover span, td:active span {
-    visibility: visible;
+@media(hover: none) or (pointer: fine) {
+    td:hover span {
+        visibility: visible;
+    }
 }
 
 td {
