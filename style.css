@@ -1,3 +1,6 @@
+html,body {
+ }
+
 html {
 	scroll-behavior: smooth;
 }
@@ -28,16 +31,18 @@ td > span {
     /* Position the tooltip */
     position: absolute;
     z-index: 2;
-    margin-left: 20px;
-}
+    display: table;
+    margin: 0 auto;
+}  
 
-td:hover span {
+
+td:hover span, td:active span {
     visibility: visible;
 }
 
 td {
     text-decoration: underline;
-}
+} 
 
 img {
     display: block;
