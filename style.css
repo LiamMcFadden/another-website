@@ -1,12 +1,13 @@
-html,body {
- }
-
 html {
 	scroll-behavior: smooth;
 }
 
 body {
     font-family: 'system-ui', sans-serif;
+}
+
+header {
+    overflow: hidden;
 }
 
 p {
@@ -31,13 +32,17 @@ td > span {
     /* Position the tooltip */
     position: absolute;
     z-index: 2;
-    display: table;
-    margin: 0 auto;
 }  
 
-@media(hover: none) or (pointer: fine) {
-    td:hover span {
+td:hover span {
+    visibility: visible;
+}
+
+@media(hover: none) {
+    td > span {
+        position: relative;
         visibility: visible;
+        background-color: initial;
     }
 }
 
